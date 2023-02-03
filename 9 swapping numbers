@@ -1,0 +1,15 @@
+#include<stdio.h>
+int main()
+{
+	float first,second,temp;
+	printf("enter first number: ");
+	scanf("%f",&first);
+	printf("enter second number: ");
+	scanf("%f",&second);
+	temp=first;
+	first=second;
+	second=temp;
+	printf("afterswapping,first number=%f\n",first);
+	printf("afterswapping,second number=%f\n",second);
+	return 0;
+}
