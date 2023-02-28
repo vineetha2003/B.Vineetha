@@ -1,0 +1,7 @@
+#include<stdio.h>
+int main()
+{
+	long long int phone_number=9375243678;
+	printf("phone number:%lld\n",phone_number);
+	return 0;
+}
