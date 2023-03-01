@@ -1,0 +1,26 @@
+#include<stdio.h>
+
+int recSum( int n );
+
+int main()
+{
+    int n,res;
+    printf("Enter number of terms:\n");
+    scanf("%d",&n);
+    res=recSum(n);
+    printf("Required sum = %d", res);
+    
+    return 0;
+}
+
+int recSum( int n )
+{
+    if (n<=0)
+    {
+        return 0;
+    }
+    else
+    {
+        return ( n + 10 * recSum ( n-1 ) );
+    }
+}
